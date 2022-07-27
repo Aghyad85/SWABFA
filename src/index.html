@@ -16,7 +16,7 @@
 
     <script>
     (async function() {
-        const { text } = await( await fetch(`https://yellow-island-07489b30f.1.azurestaticapps.net/api/HTTP`)).json();
+        const { text } = await( await fetch(`https://yellow-island-07489b30f.1.azurestaticapps.net/api/HTTP`)).body;
         document.querySelector('#name').textContent = text;
     }())
     </script>
