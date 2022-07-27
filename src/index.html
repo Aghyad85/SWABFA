@@ -11,16 +11,8 @@
 <body>
   <main>
     <h1>SWA Bring your FA </h1>
-    <p>Loading content from the API: <b id="name">...</b></p>
+   
   </main>
-
-  <script>
-    (async function() {
-        const { text } = await( await fetch(`https://yellow-island-07489b30f.1.azurestaticapps.net/api/HTTP`)).json();
-        document.querySelector('#name').textContent = text;
-    }())
-    </script>
-
 </body>
 
 </html>
