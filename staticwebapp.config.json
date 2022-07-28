@@ -1,16 +1,18 @@
 {
   "routes": [
-       {
+    {
       "route": "/*",
-             "allowedRoles": ["authenticated"]
+      "allowedRoles": [
+        "authenticated"
+      ]
     }
   ],
   "responseOverrides": {
-          "401": {
-            "redirect": "/.auth/login/aad",
-            "statusCode": 302
-          }
-        },
+    "401": {
+      "redirect": "/.auth/login/aad",
+      "statusCode": 302
+    }
+  },
   "auth": {
     "identityProviders": {
       "azureActiveDirectory": {
@@ -20,7 +22,7 @@
           "clientSecretSettingName": "AADSecret"
         },
         "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"
-              }
+      }
     }
   }
 }
