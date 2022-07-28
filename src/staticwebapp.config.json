@@ -19,7 +19,7 @@
       ]
     },
     {
-      "route": "/",
+      "route": "/*",
       "allowedRoles": [
         "authenticated"
       ]
