@@ -1,9 +1,21 @@
 {
   "routes": [
     {
-      "route": "/*",
+      "route": "/open.html",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    },
+    {
+      "route": "/",
       "allowedRoles": [
         "authenticated"
+      ]
+    },
+    {
+      "route": "/admin.html",
+      "allowedRoles": [
+        "administrator"
       ]
     }
   ],
